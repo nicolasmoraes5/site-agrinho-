@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroVida - Inovação no Campo</title>
+    <style>
+        /* Cores e Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        :root {
+            --verde-agro: #2e7d32;
+            --verde-claro: #4caf50;
+            --terra: #8d6e63;
+            --fundo: #f5f5f5;
+            --texto: #333;
+        }
+
+        body {
+            background-color: var(--fundo);
+            color: var(--texto);
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: var(--verde-agro);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        header h1 {
+            font-size: 1.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: var(--verde-claro);
+        }
+
+        /* Banner Principal */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 1rem;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+
+        /* Seções */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            text-align: center;
+            color: var(--verde-agro);
+            margin-bottom: 30px;
+        }
+
+        /* Cards de Serviços/Produtos */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--verde-claro);
+        }
+        .card h3 {
+            color: var(--terra);
+            margin-bottom: 10px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #212121;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌱 AgroVida</h1>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>O Futuro do Agronegócio</h2>
+        <p>Unindo tecnologia, sustentabilidade e tradição para cultivar os melhores resultados na sua lavoura.</p>
+    </section>
+
+    <main class="container">
+        <section id="sobre" style="margin-bottom: 60px;">
+            <h2 class="section-title">Quem Somos</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+                A AgroVida é dedicada ao desenvolvimento de soluções sustentáveis para o produtor rural. Atuamos desde o manejo inteligente do solo até o suporte tecnológico para colheitas de alta performance.
+            </p>
+        </section>
+
+        <section id="servicos">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>🌾 Consultoria de Solo</h3>
+                    <p>Análise detalhada e recomendações de manejo para garantir a máxima produtividade da terra.</p>
+                </div>
+                <div class="card">
+                    <h3>🛸 Tecnologia Embarcada</h3>
+                    <p>Uso de drones e sensores para monitoramento em tempo real de pragas e hidratação da lavoura.</p>
+                </div>
+                <div class="card">
+                    <h3>🚜 Logística Eficiente</h3>
+                    <p>Soluções inteligentes para o escoamento seguro e rápido da sua produção agrícola.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato">
+        <p>&copy; 2026 AgroVida - Todos os direitos reservados.</p>
+        <p>Contato: contato@agrovida.com | Telefone: (00) 99999-9999</p>
+    </footer>
+
+</body>
+</html>
